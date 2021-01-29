@@ -46,3 +46,4 @@ Demonstrates Doxygen html generation and publishing on GitHub Pages. The Doxygen
 1. https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/
 1. https://vicrucann.github.io/tutorials/quick-cmake-doxygen/
 1. https://medium.com/practical-coding/c-documentation-with-doxygen-cmake-sphinx-breathe-for-those-of-use-who-are-totally-lost-7d555386fe13
+1. https://stackoverflow.com/questions/18590445/cmake-custom-command-to-copy-and-rename
