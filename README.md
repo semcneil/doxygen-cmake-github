@@ -8,6 +8,22 @@ Demonstrates Doxygen html generation and publishing on GitHub Pages. The Doxygen
 4. Write a short (one sentence) description of what your project will do
 5. Click the Create repository from template button
 
+## VM <-> Github Authentication Setup
+Assuming this is being done on a Linux box. Modify accordingly if not.
+1. Create a new rsa key: `ssh-keygen -t rsa -b 4096 -C "your_email@domain.com"`
+     1. When prompted for a name, give it a relevant name
+     1. If you put no password, the security is lower, but you don't have to enter a password to login
+1. Add the key you just created to GitHub
+    1. Click the down-caret by your profile picture and select Settings
+    1. Go to the SSH and GPG Keys tab on the left
+    1. Click the New SSH key button
+    1. Give your key a name (something related to the computer it is on would be good)
+    1. Copy the contents of the key.pub file created in the first step into the box. It should start with ssh-rsa.
+    1. Click Save
+1. You now have a key on the computer and on GitHub. Now to make git on your computer use it.
+1. Start agent: `eval "$(ssh-agent -s)"`
+1. Add key to agent: `ssh-add path/to/your/new/private/key`
+
 ## VS Code VM Instructions
 1. VS Code needs the following extension added:
     1. C/C++ from Microsoft
