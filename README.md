@@ -61,6 +61,7 @@ Then in your project's root directory do the following:
 5. `git commit -a -m "Describe your changes since last commit"`
     1. The `-a` flag is used to commit all the updated documentation files
     2. VS Code also has git built into it, but the use of branches isn't as easy a workflow as the commandline offers for me (personal opinion).
+6. Note that in order for numbered (ordered) lists to work across markdown and Doxygen HTML and PDF outputs they are explicitly numbered vs markdown all being 1. or Doxygen's -#.
 
 # References
 1. https://www.doxygen.nl/manual/docblocks.html
